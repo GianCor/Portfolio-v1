@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><h2>G<span>C</span></h2></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#slideFour">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <div class="info">
+                <h1>Hola! Soy Gianluca</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit consequuntur, rem, ut obcaecati odit provident blanditiis dolorem atque reprehenderit facere quas praesentium unde accusantium. Voluptas quasi quis est explicabo.</p>
+                <a download="#"><button class="download-cv">Descarga mi curriculum</button></a>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="slideOne">
+                        <div class = "icondiv">
+                            <img class="icon html" src="assets/html.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/css-alt.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/javascript.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/figma.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/firebase.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/node-js.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/dot-net.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/mysql.svg">
+                        </div>
+                        <div class = "icondiv">
+                            <img class="icon" src="assets/github.svg">
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide" id="slideFour">Slide 4</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </main>
+        
+        <div class="proyecto">
+            <h1>Proyectos</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolorum molestiae dolore quae accusantium perferendis, consequuntur quam necessitatibus labore aut, dignissimos libero quaerat reiciendis atque obcaecati culpa facere a maxime?</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop:true,
+  effect: "cube",
+  cubeEffect:{
+    shadow: false,
+    slideShadows:false,
+  },
+  autoplay: {
+        delay: 9000,
+        disableOnInteraction: false,
+        },
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
